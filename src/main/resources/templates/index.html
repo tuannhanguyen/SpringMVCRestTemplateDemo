@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.thymeleaf.org ">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Weather Forecast Demo</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <div>
+            <h2>Realtime Weather</h2>
+        </div>
+        <div>
+            <div>
+                Your location: <b>[[${realtimeWeather.location}]]</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                Temperature: <b>[[${realtimeWeather.temperature}]] &deg;C</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                Humidity: <b>[[${realtimeWeather.humidity}]] %</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                Precipation: <b>[[${realtimeWeather.precipation}]] %</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                Wind Speed: <b>[[${realtimeWeather.windSpeed}]] km/h</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>
+                Status: <b>[[${realtimeWeather.status}]]</b>
+            </div>
+            <div>&nbsp;</div>
+            <div>&nbsp;</div>
+            <div>
+                <h4>Last updated: <b>[[${realtimeWeather.lastUpdated}]]</b></h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
